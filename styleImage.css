@@ -26,8 +26,20 @@ body, html {
     transform: translate(-50%, -50%);
     color: white;
     margin-top: 0px;
-
 }
+
+@media (max-width: 517px) {
+    .hero-text p{
+        display: none;
+    }
+}
+
+@media (max-height: 517px) {
+    .hero-text {
+        display: none;
+    }
+}
+
 /*--------------------------------------------------------------------------------------------------------------------*/
 
 /* Style the navbar */
@@ -61,6 +73,11 @@ body, html {
 .sticky + .content {
     padding-top: 60px;
 }
+
+#login {
+    position: relative;
+
+}
 /*--------------------------------------------------------------------------------------------------------------------*/
 
 #London {
@@ -72,7 +89,7 @@ body, html {
 
 }
 #Tokyo {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/nadej.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/priroda.jpeg");
 
 }
 
@@ -161,4 +178,11 @@ body, html {
     position: relative;
     width: 100%;
 
+}
+
+#mySearch {
+    width: 100%;
+    font-size: 18px;
+    padding: 11px;
+    border: 1px solid #ddd;
 }
