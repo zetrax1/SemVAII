@@ -6,8 +6,23 @@
     <link rel="stylesheet" href="styleImage.css">
 
 
+    <style>
+        @media (max-width: 517px) {
+            .hero-text p{
+                display: none;
+            }
+        }
+
+        @media (max-height: 517px) {
+            .hero-text {
+                display: none;
+            }
+        }
+    </style>
+
 </head>
 <body>
+
 
 <div class="hero-image">
     <div class="hero-text">
@@ -21,16 +36,19 @@
 
 
 <div id="navbar">
+
     <a class="active" href="javascript:void(0)">Home</a>
-    <a href="javascript:void(0)" ></a>
+    <a href="vonkusnezi.php">Gallery</a>
     <a href="javascript:void(0)">Contact</a>
     <a href="javascript:void(0)">Important</a>
     <a href="javascript:void(0)">About</a>
+    <a href="Login.html" id="login">Login</a>
 
 </div>
 
 
 <div class="tab">
+    <input  type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
     <button class="tablinks" onclick="openCity(event, 'London')">London</button>
     <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
     <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
@@ -39,16 +57,21 @@
 <div id="London" class="tabcontent">
     <h3>London</h3>
     <p>London is the capital city of England.</p>
+    <!--Todo popis zmeniť-->
 </div>
 
 <div id="Paris" class="tabcontent">
     <h3>Paris</h3>
     <p>Paris is the capital of France.</p>
+    <!--Todo popis zmeniť-->
+
 </div>
 
 <div id="Tokyo" class="tabcontent">
     <h3>Tokyo</h3>
     <p>Tokyo is the capital of Japan.</p>
+    <!--Todo popis zmeniť-->
+
 </div>
 
 
